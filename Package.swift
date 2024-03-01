@@ -19,7 +19,7 @@ let package = Package(
     // Targets can depend on other targets in this package and products from dependencies.
     .binaryTarget(
       name: "BlusaltLivenessOnly",  // Name your binary target
-      path: "./Sources/BlusaltLivenessOnly.xcframework"  // Path to your XCFramework
+      path: "BlusaltLivenessOnly.xcframework"  // Path to your XCFramework
     ),
   ]
 )
