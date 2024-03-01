@@ -4,20 +4,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "BlusaltLivenessPackage",
-    products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(
-            name: "BlusaltLivenessPackage",
-            targets: ["BlusaltLivenessPackage"]),
-    ],
-    targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "BlusaltLivenessPackage"),
-        .testTarget(
-            name: "BlusaltLivenessPackageTests",
-            dependencies: ["BlusaltLivenessPackage"]),
-    ]
+  name: "BlusaltLivenessPackage",
+  platforms: [
+    .iOS(.v13)
+  ],
+  products: [
+    // Products define the executables and libraries a package produces, making them visible to other packages.
+    .library(
+      name: "BlusaltLivenessPackage",
+      targets: ["BlusaltLivenessPackage"])
+  ],
+  dependencies: [
+    // Add your package dependencies here
+  ],
+  targets: [
+    .binaryTarget(
+      name: "BlusaltLivenessOnly",  // Name your binary target
+      path: "./Sources/BlusaltLivenessOnly.xcframework"  // Path to your XCFramework
+    ),
+  ]
 )
