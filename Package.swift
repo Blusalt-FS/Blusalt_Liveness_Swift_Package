@@ -11,8 +11,8 @@ let package = Package(
   products: [
     // Products define the executables and libraries a package produces, making them visible to other packages.
     .library(
-      name: "BlusaltLivenessPackage",
-      targets: ["BlusaltLivenessPackage"])
+      name: "BlusaltLivenessOnly",
+      targets: ["BlusaltLivenessOnly"])
   ],
   dependencies: [
     // Add your package dependencies here
