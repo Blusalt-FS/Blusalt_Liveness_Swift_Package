@@ -26,9 +26,9 @@ Pod::Spec.new do |spec|
   spec.source = { :git => 'https://github.com/Blusalt-FS/Blusalt_Liveness_Swift_Package.git', :tag => 'v0.0.2' } # url to clone the framework, tag may be same as spec.version
   # spec.source_files = 'Classes/**/*.{h,m,swift}' # add the regex to access                all the files for the framework ex: ‘FrameworkName/**/*.{h,m,swift}’
     
-  s.swift_version = '5.7'
+  # spec.swift_version = '5.7'
   
   #Below are added for local importation
-  s.vendored_frameworks = 'BlusaltLivenessOnly.xcframework'
-  s.preserve_paths = 'BlusaltLivenessOnly.xcframework/**/*'
+  spec.vendored_frameworks = 'BlusaltLivenessOnly.xcframework'
+  spec.preserve_paths = 'BlusaltLivenessOnly.xcframework/**/*'
 end
