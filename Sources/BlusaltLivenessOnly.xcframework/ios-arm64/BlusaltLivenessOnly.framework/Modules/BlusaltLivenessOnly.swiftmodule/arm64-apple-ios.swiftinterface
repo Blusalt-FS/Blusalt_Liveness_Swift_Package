@@ -1,0 +1,122 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BlusaltLivenessOnly
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Combine
+import CommonCrypto
+import DeveloperToolsSupport
+import Foundation
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension Foundation.URLSession {
+  public func downloadTaskPublisher(for url: Foundation.URL) -> BlusaltLivenessOnly.DownloadTaskPublisher
+  public func downloadTaskPublisher(for request: Foundation.URLRequest) -> BlusaltLivenessOnly.DownloadTaskPublisher
+}
+public struct DownloadTaskPublisher {
+}
+extension BlusaltLivenessOnly.DownloadTaskPublisher : Combine.Publisher {
+  public typealias Output = (Foundation.URL, Foundation.URLResponse)
+  public typealias Failure = Swift.Error
+  public func receive<Subscriber>(subscriber: Subscriber) where Subscriber : Combine.Subscriber, Subscriber.Failure == any Swift.Error, Subscriber.Input == (Foundation.URL, Foundation.URLResponse)
+}
+public enum LivenessDetectionOnlyType : Swift.String {
+  case STILL
+  case MOTIONAL
+  case FLASH
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum LivenessFacialComparisonType : Swift.String {
+  case STILL
+  case MOTIONAL
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum SDKType {
+  case FACIAL_COMPARISON
+  case FACE_DETECTION
+  public static func == (a: BlusaltLivenessOnly.SDKType, b: BlusaltLivenessOnly.SDKType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@propertyWrapper public struct OptionallyDecodable<Wrapped> where Wrapped : Swift.Decodable {
+  public let wrappedValue: Wrapped?
+  public init(wrappedValue: Wrapped?)
+}
+extension BlusaltLivenessOnly.OptionallyDecodable : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol NullableCodable {
+  associatedtype Wrapped : Swift.Decodable, Swift.ExpressibleByNilLiteral
+  var wrappedValue: Self.Wrapped { get }
+  init(wrappedValue: Self.Wrapped)
+}
+extension BlusaltLivenessOnly.OptionallyDecodable : BlusaltLivenessOnly.NullableCodable {
+}
+extension Swift.KeyedDecodingContainer {
+  public func decode<T>(_ type: T.Type, forKey key: Swift.KeyedDecodingContainer<K>.Key) throws -> T where T : BlusaltLivenessOnly.NullableCodable, T : Swift.Decodable
+}
+extension BlusaltLivenessOnly.OptionallyDecodable : Swift.Encodable where Wrapped : Swift.Encodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension BlusaltLivenessOnly.OptionallyDecodable : Swift.Equatable where Wrapped : Swift.Equatable {
+  public static func == (a: BlusaltLivenessOnly.OptionallyDecodable<Wrapped>, b: BlusaltLivenessOnly.OptionallyDecodable<Wrapped>) -> Swift.Bool
+}
+extension BlusaltLivenessOnly.OptionallyDecodable : Swift.Hashable where Wrapped : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension BlusaltLivenessOnly.OptionallyDecodable : Swift.Sendable where Wrapped : Swift.Sendable {
+}
+@_hasMissingDesignatedInitializers public class LivenessOnlyManager : Foundation.ObservableObject {
+  public static let shared: BlusaltLivenessOnly.LivenessOnlyManager
+  public func startFacialComparisonSDK(_ viewController: UIKit.UIViewController, clientId: Swift.String, appName: Swift.String, apiKey: Swift.String, isDev: Swift.Bool, fileByteData: Foundation.Data, livenessFacialComparisonType: BlusaltLivenessOnly.LivenessFacialComparisonType, onComplete: ((_ jsonRawValue: Swift.String, _ livenessSuccess: BlusaltLivenessOnly.LivenessSuccess) -> Swift.Void)?, onFailure: ((_ statusCode: Swift.Int, _ errorText: Swift.String) -> Swift.Void)?)
+  public func startFaceDetectionOnlySDK(_ viewController: UIKit.UIViewController, clientId: Swift.String, appName: Swift.String, apiKey: Swift.String, isDev: Swift.Bool, livenessDetectionOnlyType: BlusaltLivenessOnly.LivenessDetectionOnlyType, onComplete: ((_ jsonRawValue: Swift.String, _ livenessSuccess: BlusaltLivenessOnly.LivenessSuccess) -> Swift.Void)?, onFailure: ((_ statusCode: Swift.Int, _ errorText: Swift.String) -> Swift.Void)?)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+public struct LivenessSuccess : Swift.Codable {
+  public let isProcedureValidationPassed: Swift.Bool?
+  public let comparisonData: BlusaltLivenessOnly.ComparisonData?
+  public let faceDetectionData: BlusaltLivenessOnly.FaceDetectionData?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ComparisonData : Swift.Codable {
+  public let originalImage: Foundation.Data?
+  public let isPassFaceComparison: Swift.Bool?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FaceDetectionData : Swift.Codable {
+  public let livenessImage: Foundation.Data?
+  public let isPassFaceGenuineness: Swift.Bool?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension BlusaltLivenessOnly.LivenessSuccess {
+  public func encodeToJsonString() -> Swift.String?
+  public static func decodeFromJsonString(_ jsonString: Swift.String) -> BlusaltLivenessOnly.LivenessSuccess?
+}
+extension BlusaltLivenessOnly.LivenessDetectionOnlyType : Swift.Equatable {}
+extension BlusaltLivenessOnly.LivenessDetectionOnlyType : Swift.Hashable {}
+extension BlusaltLivenessOnly.LivenessDetectionOnlyType : Swift.RawRepresentable {}
+extension BlusaltLivenessOnly.LivenessFacialComparisonType : Swift.Equatable {}
+extension BlusaltLivenessOnly.LivenessFacialComparisonType : Swift.Hashable {}
+extension BlusaltLivenessOnly.LivenessFacialComparisonType : Swift.RawRepresentable {}
+extension BlusaltLivenessOnly.SDKType : Swift.Equatable {}
+extension BlusaltLivenessOnly.SDKType : Swift.Hashable {}
