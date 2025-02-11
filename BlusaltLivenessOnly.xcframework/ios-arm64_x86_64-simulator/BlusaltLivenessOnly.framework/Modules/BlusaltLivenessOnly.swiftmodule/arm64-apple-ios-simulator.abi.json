@@ -5743,9 +5743,9 @@
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Views\/MainView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3060,
-      "length": 5,
-      "value": "false"
+      "offset": 3032,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Models\/VerifyImageResponse.swift",

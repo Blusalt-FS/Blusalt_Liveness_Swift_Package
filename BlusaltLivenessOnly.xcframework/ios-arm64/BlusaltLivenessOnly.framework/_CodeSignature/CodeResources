@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BlusaltLivenessOnly-Swift.h</key>
 		<data>
-		nt+IevepuCcr24MNaMtbyDVnsgY=
+		Ur3Y5OPOQ+1xSyXhpUoIAqGdcs8=
 		</data>
 		<key>Headers/LivenessOnlyFramework.h</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QxUd7ecjOheIM3b2gg5o9HapyH0=
+		d5nmiPgQBn6lwVHCjm8iwMHEOhM=
 		</data>
 		<key>Modules/BlusaltLivenessOnly.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		YV4lhaEJLb7jZVTD8JI86LnlnGI=
+		u4FoLwIReY4UJtP+/GOHboQqHzw=
 		</data>
 		<key>Modules/BlusaltLivenessOnly.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		mClK+g5pVwVeLL453x2tWBrSOxg=
+		kqHPPlTfwSVOFJOqkIOn/exFEu8=
 		</data>
 		<key>Modules/BlusaltLivenessOnly.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		RBJdZzeGEmyzGeBI0DGL2fr6eLc=
+		XyYHIiZvYQftuuwmzZVXA4jOwIw=
 		</data>
 		<key>Modules/BlusaltLivenessOnly.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		mClK+g5pVwVeLL453x2tWBrSOxg=
+		kqHPPlTfwSVOFJOqkIOn/exFEu8=
 		</data>
 		<key>Modules/BlusaltLivenessOnly.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ktm/iZS/eG5gOd8CnYkjPHWIHmA=
+		2NkL5xQV6gcgmM6AAzrtQjr+Xhg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			627RnSYlRAbljzehvb1zOENPb5mSDapEL9vPUmCgCkc=
+			jmmGr8877eRBkcIBdNnMmDBJvCcT3u94uO/bh45AXjo=
 			</data>
 		</dict>
 		<key>Headers/LivenessOnlyFramework.h</key>
@@ -61,35 +61,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2JRCqxE4R61ghQhTAxQV6Js1TUY84JE1uCWTo+3EsM8=
+			7q5XE8CGRu18pxnfcHgoJbcd7nYEL7gnovIradUM2eM=
 			</data>
 		</dict>
 		<key>Modules/BlusaltLivenessOnly.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fypen6FEKc1raADI/7A+YRsRXbmqEscaOKp2CbnKV98=
+			JxeBAlCduES7udlNTncXYG0Ome3DUlyt8x8/h2pgR/w=
 			</data>
 		</dict>
 		<key>Modules/BlusaltLivenessOnly.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8HaoSWMfMvObMiFw0ujXdpJXhmh74FNcgamCAz0MccA=
+			FCNQPlqsqBOiKBsAmYyigCavyMNrjfZw44hyJFLn99U=
 			</data>
 		</dict>
 		<key>Modules/BlusaltLivenessOnly.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fypen6FEKc1raADI/7A+YRsRXbmqEscaOKp2CbnKV98=
+			JxeBAlCduES7udlNTncXYG0Ome3DUlyt8x8/h2pgR/w=
 			</data>
 		</dict>
 		<key>Modules/BlusaltLivenessOnly.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IoDcVeS49vetfW8BBaLRsR3jKZeYz+512ARvqPygxPU=
+			vVihWHsUrdAA+t+u37kwxfTgCNiEtKLA/O7z/C4xMKQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
