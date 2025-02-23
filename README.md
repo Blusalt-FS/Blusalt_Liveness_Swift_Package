@@ -5,8 +5,8 @@ This guide will help you integrate the Blusalt Liveness library into your SwiftU
 
 ## Requirements
 - Xcode 14.0 or later
-- iOS 15.0+ / macOS 12.0+
-- Swift 5.7+
+- iOS 14.0+ / macOS 12.0+
+- Swift 5+
 
 ## Installation
 
