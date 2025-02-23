@@ -49,17 +49,170 @@ targets: [
 
 1. Import the package in your SwiftUI view:
 ```swift
-import Blusalt_Liveness_Swift_Package
+import BlusaltLivenessOnly
+import SwiftUI
 ```
 
 2. Start using the components:
 ```swift
+
 struct ContentView: View {
-    var body: some View {
-        CustomButton(title: "Press Me") {
-            print("Button pressed!")
-        }
-    }
+   
+    var clientId: String = ""
+    var appName: String = ""
+    var apiKey: String = ""
+    var isDev: Bool = false
+
+  @EnvironmentObject var theme: Theme
+  @Environment(\.presentationMode) var presentationMode
+
+  @State private var showImagePicker = false
+  @State private var startSDK = false
+
+  @State private var livenessResult: Data? = nil
+
+  @State private var imageFile: Data? = nil
+
+  var body: some View {
+
+    GeometryReader { geometry in
+      ZStack {
+        Color(
+          hex: 0xFFF5_F5F5
+        ).edgesIgnoringSafeArea(.all)
+
+        ScrollView {
+          VStack(alignment: .center) {
+
+            Spacer().frame(height: 32)
+
+            Group {
+              Text("Liveness Check Demo App")
+                .font(.system(size: 20, weight: .bold)).multilineTextAlignment(.center)
+                .foregroundColor(Color(hex: 0xFF07_1B2B))
+
+              Spacer().frame(height: 13.heightPercentage)
+            }
+              
+            Group {
+              if let livenessResult = livenessResult, let uiImage = UIImage(data: livenessResult) {
+                Image(uiImage: uiImage)
+                  .resizable()
+                  .scaledToFit()
+                  .frame(maxWidth: .infinity)
+                  .layoutPriority(1)
+
+              } else {
+                Text(
+                  "Your processed image will display here.\n You are required to pick an image containing your face so it can do comparison"
+                )
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color(hex: 0xFFAA_AAAA)).onTapGesture {
+
+                  if let windowScene = UIApplication.shared.connectedScenes.first
+                    as? UIWindowScene,
+                    let viewController = windowScene.windows.first?.rootViewController
+                  {
+                    LivenessOnlyManager.shared
+                      .startFaceDetectionOnlySDK(
+                        viewController, clientId: clientId, appName: appName, apiKey: apiKey,
+                        isDev: isDev, livenessDetectionOnlyType: .MOTIONAL,
+                        onComplete: { jsonRawValue, livenessSuccess in
+                          if let base64 = livenessSuccess.faceDetectionData?.livenessImage {
+                            livenessResult = Data(base64Encoded: base64)
+                          }
+                          print(
+                            "startLivenessDetectionOnlySDK Demo app is called and is successful")
+
+                          print(
+                            "\(String(describing: livenessSuccess.isProcedureValidationPassed))")
+
+                        },
+                        onFailure: {
+                          statusCode, errorText in
+
+                          print(
+                            "startFacialComparisonSDK Demo app is called and is failed: \(statusCode) \(errorText)"
+                          )
+
+                        })
+                  }
+                }
+              }
+
+              Spacer().frame(height: 10.heightPercentage)
+
+              CustomButton(
+                title: livenessResult == nil ? "Try out" : "Try again",
+                width: 200,
+                onTap: {
+                  showImagePicker.toggle()
+                }
+
+              ).ignoresSafeArea(.all).sheet(isPresented: $startSDK) {
+              }
+              .ignoresSafeArea(.all).sheet(isPresented: $showImagePicker) {
+
+                CustomImagePicker {
+                  url in
+                  if url != nil {
+
+                    // Pick image from gallery and pass to SDK
+                    let data: Data? = try? Data(contentsOf: url!)
+                    if let data = data {
+
+                      //                      print("image picked")
+                      //                      print(clientId)
+                      imageFile = data
+
+                      if let windowScene = UIApplication.shared.connectedScenes.first
+                        as? UIWindowScene,
+                        let viewController = windowScene.windows.first?.rootViewController
+                      {
+
+                        let livenessOnlyManager = LivenessOnlyManager.shared
+                        livenessOnlyManager.startFacialComparisonSDK(
+                          viewController, clientId: clientId, appName: appName, apiKey: apiKey,
+                          isDev: isDev, fileByteData: data, livenessFacialComparisonType: .MOTIONAL,
+                          onComplete: { jsonRawValue, livenessSuccess in
+
+                            if let base64 = livenessSuccess.faceDetectionData?.livenessImage {
+                              livenessResult = Data(base64Encoded: base64)
+                            }
+
+                            print("startFacialComparisonSDK Demo app is called and is successful")
+                            print(
+                              "\(String(describing: livenessSuccess.isProcedureValidationPassed))")
+
+                          },
+                          onFailure: { statusCode, errorText in
+
+                            print(
+                              "startFacialComparisonSDK Demo app is called and is failed: \(statusCode) \(errorText)"
+                            )
+
+                          })
+                      }
+
+                    }
+                  }
+                }
+              }
+
+              Group {
+                Spacer().frame(height: 13.heightPercentage)
+                BlusaltLogo()
+                Spacer().frame(height: 5.heightPercentage)
+              }.layoutPriority(1)
+            }.frame(width: .infinity, height: .infinity)  // VStack
+          }.padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))  // ScrollView
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .scrollIndicators(ScrollIndicatorVisibility.hidden)
+        }  // ZStack
+      }  // GeometryReader
+    }  // NavigationView
+
+  }
 }
 ```
 
