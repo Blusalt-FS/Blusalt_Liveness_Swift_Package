@@ -30,7 +30,7 @@ If you're developing a Swift package, add the dependency to your `Package.swift`
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/Blusalt-FS/Blusalt_Liveness_Swift_Package.git", from: "0.1.0")
+    .package(url: "https://github.com/Blusalt-FS/Blusalt_Liveness_Swift_Package.git", from: "0.2.0")
 ]
 ```
 
