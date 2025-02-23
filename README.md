@@ -25,26 +25,6 @@ This guide will help you integrate the Blusalt Liveness library into your SwiftU
 6. Select the target where you want to add the package
 7. Click `Add Package` to finalize the installation
 
-### Using Package.swift
-If you're developing a Swift package, add the dependency to your `Package.swift` file:
-
-```swift
-dependencies: [
-    .package(url: "https://github.com/Blusalt-FS/Blusalt_Liveness_Swift_Package.git", from: "0.2.0")
-]
-```
-
-Then add the dependency to your target:
-
-```swift
-targets: [
-    .target(
-        name: "YourTarget",
-        dependencies: ["Blusalt_Liveness_Swift_Package"]
-    )
-]
-```
-
 ## Usage
 
 1. Import the package in your SwiftUI view:
