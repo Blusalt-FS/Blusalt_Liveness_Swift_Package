@@ -1686,7 +1686,7 @@
           {
             "kind": "Function",
             "name": "startFacialComparisonSDK",
-            "printedName": "startFacialComparisonSDK(_:clientId:appName:apiKey:isDev:fileByteData:livenessFacialComparisonType:startProcessOnGettingToFirstScreen:thresholdInPercent:timeoutDurationInSec:onComplete:onFailure:)",
+            "printedName": "startFacialComparisonSDK(_:clientId:appName:apiKey:isDev:webhookUrl:reference:fileByteData:livenessFacialComparisonType:startProcessOnGettingToFirstScreen:thresholdInPercent:timeoutDurationInSec:onComplete:onFailure:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1722,6 +1722,36 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -1860,8 +1890,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:19BlusaltLivenessOnly0bC7ManagerC24startFacialComparisonSDK_8clientId7appName6apiKey5isDev12fileByteData08livenessfG4Type0E29ProcessOnGettingToFirstScreen18thresholdInPercent20timeoutDurationInSec10onComplete9onFailureySo16UIViewControllerC_S3SSb10Foundation0S0VAA0bfgU0OSbSgSdSgSiSgySS_AA0B7SuccessVtcSgySi_SStcSgtF",
-            "mangledName": "$s19BlusaltLivenessOnly0bC7ManagerC24startFacialComparisonSDK_8clientId7appName6apiKey5isDev12fileByteData08livenessfG4Type0E29ProcessOnGettingToFirstScreen18thresholdInPercent20timeoutDurationInSec10onComplete9onFailureySo16UIViewControllerC_S3SSb10Foundation0S0VAA0bfgU0OSbSgSdSgSiSgySS_AA0B7SuccessVtcSgySi_SStcSgtF",
+            "usr": "s:19BlusaltLivenessOnly0bC7ManagerC24startFacialComparisonSDK_8clientId7appName6apiKey5isDev10webhookUrl9reference12fileByteData08livenessfG4Type0E29ProcessOnGettingToFirstScreen18thresholdInPercent20timeoutDurationInSec10onComplete9onFailureySo16UIViewControllerC_S3SSbSSSgAT10Foundation0V0VAA0bfgX0OSbSgSdSgSiSgySS_AA0B7SuccessVtcSgySi_SStcSgtF",
+            "mangledName": "$s19BlusaltLivenessOnly0bC7ManagerC24startFacialComparisonSDK_8clientId7appName6apiKey5isDev10webhookUrl9reference12fileByteData08livenessfG4Type0E29ProcessOnGettingToFirstScreen18thresholdInPercent20timeoutDurationInSec10onComplete9onFailureySo16UIViewControllerC_S3SSbSSSgAT10Foundation0V0VAA0bfgX0OSbSgSdSgSiSgySS_AA0B7SuccessVtcSgySi_SStcSgtF",
             "moduleName": "BlusaltLivenessOnly",
             "declAttributes": [
               "AccessControl",
@@ -1872,7 +1902,7 @@
           {
             "kind": "Function",
             "name": "startFaceDetectionOnlySDK",
-            "printedName": "startFaceDetectionOnlySDK(_:clientId:appName:apiKey:isDev:livenessDetectionOnlyType:startProcessOnGettingToFirstScreen:timeoutDurationInSec:onComplete:onFailure:)",
+            "printedName": "startFaceDetectionOnlySDK(_:clientId:appName:apiKey:isDev:webhookUrl:reference:livenessDetectionOnlyType:startProcessOnGettingToFirstScreen:timeoutDurationInSec:onComplete:onFailure:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1908,6 +1938,36 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -2025,8 +2085,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:19BlusaltLivenessOnly0bC7ManagerC018startFaceDetectionC3SDK_8clientId7appName6apiKey5isDev08livenessgC4Type0E29ProcessOnGettingToFirstScreen20timeoutDurationInSec10onComplete9onFailureySo16UIViewControllerC_S3SSbAA0bgcR0OSbSgSiSgySS_AA0B7SuccessVtcSgySi_SStcSgtF",
-            "mangledName": "$s19BlusaltLivenessOnly0bC7ManagerC018startFaceDetectionC3SDK_8clientId7appName6apiKey5isDev08livenessgC4Type0E29ProcessOnGettingToFirstScreen20timeoutDurationInSec10onComplete9onFailureySo16UIViewControllerC_S3SSbAA0bgcR0OSbSgSiSgySS_AA0B7SuccessVtcSgySi_SStcSgtF",
+            "usr": "s:19BlusaltLivenessOnly0bC7ManagerC018startFaceDetectionC3SDK_8clientId7appName6apiKey5isDev10webhookUrl9reference08livenessgC4Type0E29ProcessOnGettingToFirstScreen20timeoutDurationInSec10onComplete9onFailureySo16UIViewControllerC_S3SSbSSSgArA0bgcU0OSbSgSiSgySS_AA0B7SuccessVtcSgySi_SStcSgtF",
+            "mangledName": "$s19BlusaltLivenessOnly0bC7ManagerC018startFaceDetectionC3SDK_8clientId7appName6apiKey5isDev10webhookUrl9reference08livenessgC4Type0E29ProcessOnGettingToFirstScreen20timeoutDurationInSec10onComplete9onFailureySo16UIViewControllerC_S3SSbSSSgArA0bgcU0OSbSgSiSgySS_AA0B7SuccessVtcSgySi_SStcSgtF",
             "moduleName": "BlusaltLivenessOnly",
             "declAttributes": [
               "AccessControl",
@@ -2069,7 +2129,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(parentCC:clientId:appName:apiKey:isDev:fileByteData:livenessType:thresholdInPercent:timeoutDuration:onComplete:onFailure:)",
+            "printedName": "init(parentCC:clientId:appName:apiKey:isDev:webhookUrl:reference:fileByteData:livenessType:thresholdInPercent:timeoutDuration:onComplete:onFailure:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2106,6 +2166,36 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -2229,8 +2319,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:19BlusaltLivenessOnly38StartFacialComparisonSDKViewControllerC8parentCC8clientId7appName6apiKey5isDev12fileByteData12livenessType18thresholdInPercent15timeoutDuration10onComplete9onFailureACSo06UIViewH0C_S3SSb10Foundation0U0VAA0befW0OSdSgSiSgySS_AA0B7SuccessVtcSgySi_SStcSgtcfc",
-            "mangledName": "$s19BlusaltLivenessOnly38StartFacialComparisonSDKViewControllerC8parentCC8clientId7appName6apiKey5isDev12fileByteData12livenessType18thresholdInPercent15timeoutDuration10onComplete9onFailureACSo06UIViewH0C_S3SSb10Foundation0U0VAA0befW0OSdSgSiSgySS_AA0B7SuccessVtcSgySi_SStcSgtcfc",
+            "usr": "s:19BlusaltLivenessOnly38StartFacialComparisonSDKViewControllerC8parentCC8clientId7appName6apiKey5isDev10webhookUrl9reference12fileByteData12livenessType18thresholdInPercent15timeoutDuration10onComplete9onFailureACSo06UIViewH0C_S3SSbSSSgAS10Foundation0X0VAA0befZ0OSdSgSiSgySS_AA0B7SuccessVtcSgySi_SStcSgtcfc",
+            "mangledName": "$s19BlusaltLivenessOnly38StartFacialComparisonSDKViewControllerC8parentCC8clientId7appName6apiKey5isDev10webhookUrl9reference12fileByteData12livenessType18thresholdInPercent15timeoutDuration10onComplete9onFailureACSo06UIViewH0C_S3SSbSSSgAS10Foundation0X0VAA0befZ0OSdSgSiSgySS_AA0B7SuccessVtcSgySi_SStcSgtcfc",
             "moduleName": "BlusaltLivenessOnly",
             "declAttributes": [
               "Preconcurrency",
@@ -2422,7 +2512,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(parentCC:clientId:appName:apiKey:isDev:livenessType:timeoutDuration:onComplete:onFailure:)",
+            "printedName": "init(parentCC:clientId:appName:apiKey:isDev:webhookUrl:reference:livenessType:timeoutDuration:onComplete:onFailure:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2459,6 +2549,36 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -2561,8 +2681,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:19BlusaltLivenessOnly018StartFaceDetectionC17SDKViewControllerC8parentCC8clientId7appName6apiKey5isDev12livenessType15timeoutDuration10onComplete0W7FailureACSo06UIViewH0C_S3SSbAA0bfcT0OSiSgySS_AA0B7SuccessVtcSgySi_SStcSgtcfc",
-            "mangledName": "$s19BlusaltLivenessOnly018StartFaceDetectionC17SDKViewControllerC8parentCC8clientId7appName6apiKey5isDev12livenessType15timeoutDuration10onComplete0W7FailureACSo06UIViewH0C_S3SSbAA0bfcT0OSiSgySS_AA0B7SuccessVtcSgySi_SStcSgtcfc",
+            "usr": "s:19BlusaltLivenessOnly018StartFaceDetectionC17SDKViewControllerC8parentCC8clientId7appName6apiKey5isDev10webhookUrl9reference12livenessType15timeoutDuration10onComplete0Z7FailureACSo06UIViewH0C_S3SSbSSSgAqA0bfcW0OSiSgySS_AA0B7SuccessVtcSgySi_SStcSgtcfc",
+            "mangledName": "$s19BlusaltLivenessOnly018StartFaceDetectionC17SDKViewControllerC8parentCC8clientId7appName6apiKey5isDev10webhookUrl9reference12livenessType15timeoutDuration10onComplete0Z7FailureACSo06UIViewH0C_S3SSbSSSgAqA0bfcW0OSiSgySS_AA0B7SuccessVtcSgySi_SStcSgtcfc",
             "moduleName": "BlusaltLivenessOnly",
             "declAttributes": [
               "Preconcurrency",
@@ -5519,14 +5639,14 @@
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/APIs\/NetworkHelper.swift",
       "kind": "StringLiteral",
-      "offset": 597,
+      "offset": 621,
       "length": 9,
       "value": "\"meglive\""
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/APIs\/NetworkHelper.swift",
       "kind": "StringLiteral",
-      "offset": 633,
+      "offset": 661,
       "length": 3,
       "value": "\"0\""
     },
@@ -5595,127 +5715,141 @@
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Utils\/LivenessNativePrivateCommons.swift",
+      "kind": "StringLiteral",
+      "offset": 427,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Utils\/LivenessNativePrivateCommons.swift",
+      "kind": "StringLiteral",
+      "offset": 456,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Utils\/LivenessNativePrivateCommons.swift",
       "kind": "IntegerLiteral",
-      "offset": 501,
+      "offset": 560,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Utils\/LivenessNativePrivateCommons.swift",
       "kind": "BooleanLiteral",
-      "offset": 720,
+      "offset": 779,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Utils\/LivenessNativePrivateCommons.swift",
       "kind": "StringLiteral",
-      "offset": 765,
+      "offset": 824,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Utils\/LivenessNativePrivateCommons.swift",
       "kind": "StringLiteral",
-      "offset": 1023,
+      "offset": 1082,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Utils\/LivenessNativePrivateCommons.swift",
       "kind": "StringLiteral",
-      "offset": 1708,
+      "offset": 1767,
       "length": 33,
       "value": "\"MGFaceIDLiveCustomDetect.bundle\""
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Utils\/LivenessNativePrivateCommons.swift",
       "kind": "StringLiteral",
-      "offset": 1771,
+      "offset": 1830,
       "length": 35,
       "value": "\"BlusaltLivenessAssetBundle.bundle\""
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Utils\/LivenessNativePrivateCommons.swift",
       "kind": "StringLiteral",
-      "offset": 1915,
+      "offset": 1974,
       "length": 67,
       "value": "\"https:\/\/dev-api.blusalt.net\/SDKs\/IOS\/MGFaceIDLiveCustomDetect.zip\""
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Utils\/LivenessNativePrivateCommons.swift",
       "kind": "StringLiteral",
-      "offset": 2006,
+      "offset": 2065,
       "length": 63,
       "value": "\"https:\/\/api.blusalt.net\/SDKs\/IOS\/MGFaceIDLiveCustomDetect.zip\""
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Utils\/LivenessNativePrivateCommons.swift",
       "kind": "StringLiteral",
-      "offset": 2107,
+      "offset": 2166,
       "length": 69,
       "value": "\"https:\/\/dev-api.blusalt.net\/SDKs\/IOS\/BlusaltLivenessAssetBundle.zip\""
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Utils\/LivenessNativePrivateCommons.swift",
       "kind": "StringLiteral",
-      "offset": 2207,
+      "offset": 2266,
       "length": 65,
       "value": "\"https:\/\/api.blusalt.net\/SDKs\/IOS\/BlusaltLivenessAssetBundle.zip\""
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Utils\/LivenessNativePrivateCommons.swift",
       "kind": "StringLiteral",
-      "offset": 2289,
+      "offset": 2348,
       "length": 48,
       "value": "\"\/faceid\/v3\/sdk\/internal\/get_license_and_config\""
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Utils\/LivenessNativePrivateCommons.swift",
       "kind": "StringLiteral",
-      "offset": 2369,
+      "offset": 2428,
       "length": 58,
       "value": "\"https:\/\/dev-api.blusalt.net\/api\/Normal\/Liveness\/BizToken\""
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Utils\/LivenessNativePrivateCommons.swift",
       "kind": "StringLiteral",
-      "offset": 2452,
+      "offset": 2511,
       "length": 54,
       "value": "\"https:\/\/api.blusalt.net\/api\/Normal\/Liveness\/BizToken\""
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Utils\/LivenessNativePrivateCommons.swift",
       "kind": "StringLiteral",
-      "offset": 2548,
+      "offset": 2607,
       "length": 78,
       "value": "\"https:\/\/dev-api.blusalt.net\/api\/Normal\/ImageProcessing\/ChangeImageBackground\""
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Utils\/LivenessNativePrivateCommons.swift",
       "kind": "StringLiteral",
-      "offset": 2665,
+      "offset": 2724,
       "length": 74,
       "value": "\"https:\/\/api.blusalt.net\/api\/Normal\/ImageProcessing\/ChangeImageBackground\""
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Utils\/LivenessNativePrivateCommons.swift",
       "kind": "StringLiteral",
-      "offset": 2761,
+      "offset": 2820,
       "length": 59,
       "value": "\"https:\/\/dev-api.blusalt.net\/api\/Normal\/MegliveData\/Verify\""
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Utils\/LivenessNativePrivateCommons.swift",
       "kind": "StringLiteral",
-      "offset": 2839,
+      "offset": 2898,
       "length": 55,
       "value": "\"https:\/\/api.blusalt.net\/api\/Normal\/MegliveData\/Verify\""
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Utils\/LivenessNativePrivateCommons.swift",
       "kind": "StringLiteral",
-      "offset": 2912,
+      "offset": 2971,
       "length": 4,
       "value": "\"en\""
     },
@@ -5729,21 +5863,21 @@
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Views\/MainView.swift",
       "kind": "BooleanLiteral",
-      "offset": 804,
+      "offset": 843,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Views\/MainView.swift",
       "kind": "StringLiteral",
-      "offset": 2928,
+      "offset": 3093,
       "length": 16,
       "value": "\"Liveness Check\""
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Views\/MainView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3060,
+      "offset": 3225,
       "length": 5,
       "value": "false"
     },
@@ -5771,35 +5905,35 @@
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Models\/VerifyImageResponse.swift",
       "kind": "StringLiteral",
-      "offset": 819,
+      "offset": 2141,
       "length": 12,
       "value": "\"image_best\""
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Models\/VerifyImageResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1015,
+      "offset": 2337,
       "length": 6,
       "value": "\"1e-3\""
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Models\/VerifyImageResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1041,
+      "offset": 2363,
       "length": 6,
       "value": "\"1e-4\""
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Models\/VerifyImageResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1067,
+      "offset": 2389,
       "length": 6,
       "value": "\"1e-5\""
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Models\/VerifyImageResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1093,
+      "offset": 2415,
       "length": 6,
       "value": "\"1e-6\""
     },
@@ -5876,7 +6010,7 @@
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/Styles\/Styles.swift",
       "kind": "IntegerLiteral",
-      "offset": 1662,
+      "offset": 1688,
       "length": 2,
       "value": "50"
     },
@@ -5953,37 +6087,135 @@
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/ViewModels\/MainViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 20977,
+      "offset": 21515,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/ViewModels\/MainViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 21022,
+      "offset": 21560,
       "length": 23,
       "value": "\"Processing Request...\""
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/LivenessOnlyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1411,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/LivenessOnlyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1440,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/LivenessOnlyManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1521,
+      "offset": 1580,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/LivenessOnlyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3421,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/LivenessOnlyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3450,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/LivenessOnlyManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3376,
+      "offset": 3560,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/LivenessOnlyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4834,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/LivenessOnlyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4862,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/LivenessOnlyManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4774,
+      "offset": 5081,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/LivenessOnlyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 10516,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/LivenessOnlyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 10546,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/LivenessOnlyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 11001,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/LivenessOnlyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 11030,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/LivenessOnlyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 13874,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/LivenessOnlyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 13904,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/LivenessOnlyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 14284,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/LivenessOnlyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 14313,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/folarin\/development\/ios_projects\/Frameworks\/BlusaltSDKS\/LivenessOnlyFramework\/LivenessOnlyFramework\/ViewModels\/UIViewModel.swift",
