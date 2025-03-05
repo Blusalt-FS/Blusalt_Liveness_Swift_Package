@@ -1,4 +1,4 @@
-# Blusalt_Liveness_Swift_Package Library Integration Guide
+# Blusalt Liveness Swift Package Library Integration Guide
 
 ## Overview
 This guide will help you integrate the Blusalt Liveness library into your SwiftUI project using Swift Package Manager (SPM). Blusalt Liveness provides a collection of reusable SwiftUI components.
