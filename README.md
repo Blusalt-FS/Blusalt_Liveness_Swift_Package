@@ -96,7 +96,8 @@ struct ContentView: View {
                     LivenessOnlyManager.shared
                       .startFaceDetectionOnlySDK(
                         viewController, clientId: clientId, appName: appName, apiKey: apiKey,
-                        isDev: isDev, livenessDetectionOnlyType: .MOTIONAL,
+                        isDev: isDev, webhookUrl: "https://blusalt.net/webhookcalbacl",
+                        reference: "reference", livenessDetectionOnlyType: .MOTIONAL,
                         onComplete: { jsonRawValue, livenessSuccess in
                           if let base64 = livenessSuccess.faceDetectionData?.livenessImage {
                             livenessResult = Data(base64Encoded: base64)
@@ -141,8 +142,6 @@ struct ContentView: View {
                     let data: Data? = try? Data(contentsOf: url!)
                     if let data = data {
 
-                      //                      print("image picked")
-                      //                      print(clientId)
                       imageFile = data
 
                       if let windowScene = UIApplication.shared.connectedScenes.first
@@ -153,7 +152,8 @@ struct ContentView: View {
                         let livenessOnlyManager = LivenessOnlyManager.shared
                         livenessOnlyManager.startFacialComparisonSDK(
                           viewController, clientId: clientId, appName: appName, apiKey: apiKey,
-                          isDev: isDev, fileByteData: data, livenessFacialComparisonType: .MOTIONAL,
+                          isDev: isDev, webhookUrl: "https://blusalt.net/webhookcalbacl",
+                        reference: "reference", fileByteData: data, livenessFacialComparisonType: .MOTIONAL,
                           onComplete: { jsonRawValue, livenessSuccess in
 
                             if let base64 = livenessSuccess.faceDetectionData?.livenessImage {
