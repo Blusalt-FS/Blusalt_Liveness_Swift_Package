@@ -8,6 +8,23 @@ This guide will help you integrate the Blusalt Liveness library into your SwiftU
 - iOS 14.0+ / macOS 12.0+
 - Swift 5+
 
+## Features
+
+#### Facial comparison (LivenessFacialComparisonType)
+1. Dynamic Liveness Detection (Motional):
+   This method verifies liveness by requiring the user to perform specific actions like opening their mouth or shaking their head.
+   It's strict because attempts to bypass the action (like holding a still image) will be detected and likely terminate the process.
+2. Static Liveness Detection (Still):
+   This approach asks users to position their face within the camera frame and validates liveness based on facial data points.
+   It's less strict than the dynamic method. If users struggle with finding the right camera position, the process might not automatically terminate, allowing them to adjust.
+
+#### Face Detection (LivenessDetectionOnlyType)
+1. Dynamic Liveness Detection (Motional)
+2. Static Liveness Detection (Still)
+3. Flash Liveness Detection (Flash):
+   This method is only available for facial detection, not facial comparison.
+   It works similarly to the static method but increases the device screen brightness to enhance facial data point detection.
+
 ## Installation
 
 ### Using Xcode
